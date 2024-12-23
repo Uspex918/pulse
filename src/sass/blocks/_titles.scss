@@ -1,0 +1,14 @@
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  &_left {
+    color: #fff;
+    text-align: left;
+    line-height: 54px;
+  }
+}

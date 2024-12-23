@@ -7,6 +7,9 @@
 // * {
 //   font-family: "fontello", sans-serif;
 // }
+main-color {
+  background-color: rgb(199, 1, 1);
+}
 
 .container {
   max-width: 950px;
@@ -14,3 +17,7 @@
 }
 @import "blocks/promo";
 @import "blocks/header.scss";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/titles";
