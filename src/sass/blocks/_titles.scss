@@ -5,10 +5,18 @@
   line-height: 150%;
   text-transform: uppercase;
   color: #ffffff;
-  
+
   &_left {
     color: #fff;
     text-align: left;
     line-height: 54px;
+  }
+  &_tabs {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0d0d0d;
   }
 }
