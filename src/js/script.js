@@ -109,7 +109,34 @@ $(document).ready(function () {
   $("[data-modal=consultation]").on("click", function () {
     $(".overlay, #consulting").fadeIn("slow");
   });
-  $(".modal__close, .overlay").on("click", function () {
+  $(".modal__close").on("click", function () {
     $(".overlay,#consulting, #order, #thanks").fadeOut("slow");
   });
+
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: "Пожалуйста, введите свое имя",
+        phone: "Пожалуйста, введите ваш номер телефона",
+        email: {
+          required: "Пожалуйста, введите свой email",
+          email:
+            "ваш email адрес (почта) должен быть в формате name@domain.com",
+        },
+      },
+    });
+  }
+  validateForm("#consulting form");
+  validateForm("#order form");
+  validateForm("#forma");
+
+  $("input[name=phone]").mask("+7 (999) 999-99-99");
 });
