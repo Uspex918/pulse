@@ -10,13 +10,23 @@
     justify-content: center;
     align-items: center;
   }
-  &__cup {
+  &__wrapper {
+    display: flex;
     margin-top: 60px;
-    img {
-      display: block;
-      margin: 0 auto;
+  }
+  &__item {
+    display: block;
+    margin: 0 auto;
+  }
+  &__icon {
+    &_animated {
+      animation-name: heartbeat;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
     }
   }
+
   &__cool {
     display: flex;
     justify-content: space-between;

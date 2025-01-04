@@ -1,4 +1,7 @@
 @import "base/variables";
+@import "base/animations";
+@import "base.animate.css";
+
 * {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "fontello";
@@ -11,11 +14,16 @@ main-color {
   background-color: rgb(199, 1, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   position: relative;
   max-width: 950px;
   margin: 0 auto;
 }
+
 @import "blocks/promo";
 @import "blocks/header.scss";
 @import "blocks/buttons";
@@ -28,3 +36,12 @@ main-color {
 @import "blocks/feed";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/pageup";
+
+.promo__header {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 9s; /* don't forget to set a duration! */
+}

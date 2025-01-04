@@ -16,10 +16,11 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
      <link rel="stylesheet" href="css/style.min.css">
      <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-     <section class="promo">
+     <section id="up" class="promo">
           <div class="container">
                <header class="header">
                     <a href="#" class="header__logo">
@@ -35,7 +36,7 @@
                     </div>
                </header>
                <div class="promo__wrapper">
-                    <h1 class="promo__header">Подбор пульсометра</h1>
+                    <h1 class="promo__header animate__animated animate__bounce">Подбор пульсометра</h1>
                     <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
                     <div class="promo__icons">
                          <div class="promo__icon"><img src="icons/main_screen/timer.png" alt="">Время подбора:<br>10
@@ -58,8 +59,16 @@
           <div class="container">
 
                <div class="advantages__header-text">НАШИ ПРЕИМУЩЕСТВА</div>
-               <div class="advantages__cup">
-                    <img src="icons/main_screen/three elements.png" class="subcup">
+               <div class="advantages__wrapper">
+                    <div class="advantages__item">
+                         <img src="icons/main_screen/cup.svg" class="advantages__icon advantages__icon_animated">
+                    </div>
+                    <div class="advantages__item">
+                         <img src="icons/main_screen/heart.svg" class="advantages__icon advantages__icon_animated">
+                    </div>
+                    <div class="advantages__item">
+                         <img src="icons/main_screen/shoe.svg" class="advantages__icon advantages__icon_animated">
+                    </div>
                </div>
                <div class="advantages__cool">
                     <div class="advantages__x">
@@ -525,6 +534,10 @@
           </div>
      </div>
 
+     <a href="#up" class="pageup hash">
+          <img src="icons/main_screen/chevron-circle-up-solid.svg" alt="">
+     </a>
+
 
 
      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -546,6 +559,9 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="js/jquery.validate.min.js"></script>
      <script src="js/jquery.maskedinput.min.js"></script>
+
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
      <script src="js/script.js"></script>
      <!-- <script src="js/script2.js"></script> -->
 </body>
