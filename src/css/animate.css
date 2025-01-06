@@ -1,0 +1,17 @@
+/* @import "animate.compat.css"; */
+.animate__fadeInLeft {
+  animation-duration: 2s;
+}
+
+.animate__jackInTheBox {
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+}
+
+.animate__bounceInUp {
+  animation-duration: 2s;
+}
+/* 
+.animate__zoomIn {
+  animation-duration: 1s;
+} */

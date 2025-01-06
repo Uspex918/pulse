@@ -150,7 +150,7 @@ $(document).ready(function () {
     }
   });
 
-  // $("a[href^='#']").on("click", function (event) {
+  // $("a [href='#up']").on("click", function (event) {
   //   // Make sure this.hash has a value before overriding default behavior
   //   if (this.hash !== "") {
   //     // Prevent default anchor click behavior
@@ -173,4 +173,5 @@ $(document).ready(function () {
   //     );
   //   } // End if
   // });
+  new WOW().init();
 });
